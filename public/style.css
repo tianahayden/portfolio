@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.opening {
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    width: 100vw;
+    background-color: #fce1e0;
+    background-image: url("tiana.png");
+    background-size: 70vh;
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+}
+
+.heading {
+    padding-left: 50%;
+    padding-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    /* color: #031424; */
+    color: #30415D;
+}
+
+.heading h1 {
+    margin:0;
+    font-weight: 300;
+    font-size: 100px;
+}
+
+.heading p {
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: #fce1e0;
+    display: flex;
+    justify-content: space-evenly;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+button {
+    background-color: #031424;
+    color:#fce1e0;
+    font-size: 20px;
+    width: 34vw;
+    height: 10vh;
+    border: 1px #fce1e0 solid;
+}
+
+.section {
+    background-color: #8EAEBD;
+}
+
+.section p {
+    margin: 0;
+}
+
+.image {
+    height: 300px;
+    border-radius: 50%;
+}
+
+.image-section-l {
+    display: flex;
+    justify-content: center;
+}
+
+.image-section-r {
+    display: flex;
+    justify-content: center;
+}
+
+.child-section-l {
+    margin-left: 20vw;
+    margin-top: 30px;
+}
+
+.child-section-r {
+    margin-right: 20vw;
+    margin-top: 30px;
+}
