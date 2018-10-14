@@ -25,6 +25,10 @@ app.post('/thanks', (req, res) => {
     res.render('thanks', { contact: req.body })
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects');
+});
+
 app.listen(8080, () => {
     console.log('listening at http://localhost:8080')
 });
