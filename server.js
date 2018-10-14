@@ -21,13 +21,26 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 app.post('/thanks', (req, res) => {
+    const msg = {
+        to: 'tiana.hayden@me.com',
+        from: 'noreply@noreply.com',
+        subject: 'New email from portfolio',
+        text: req.body.message,
+        html: '<p>first name: ' + req.body.firstName + '</p><p>last name: ' + req.body.lastName + '</p><p> email: ' + req.body.email + '</p><p>message: ' + req.body.message + '</p>',
+    };
+    sgMail.send(msg);
     res.render('thanks', { contact: req.body })
 });
 
 app.get('/projects', (req, res) => {
     res.render('projects');
 });
+
+
 
 app.listen(8080, () => {
     console.log('listening at http://localhost:8080')

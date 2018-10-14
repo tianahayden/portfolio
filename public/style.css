@@ -15,11 +15,11 @@ html,body {
 .opening {
     margin: 0;
     padding: 0;
-    height: 70vh;
+    height: 500px;
     width: 100vw;
     background-color: #fce1e0;
     background-image: url("tiana.png");
-    background-size: 70vh;
+    background-size: 500px;
     background-repeat: no-repeat;
     background-position: left bottom; 
 }
@@ -46,6 +46,26 @@ html,body {
     font-size: 30px;
 }
 
+.icons {
+    position: absolute;
+    top: 0;
+    text-align: right;
+    right: 0px;
+    display: flex;
+}
+
+.button-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 5px;
+    color: #30415D;
+    text-decoration: none;
+}
+
+.fab:hover {
+    opacity: 0.8;
+}
+
 .navbar {
     background-color: #fce1e0;
     display: flex;
@@ -55,13 +75,19 @@ html,body {
     top: 0;
 }
 
-button {
+.button-nav {
     background-color: #031424;
-    color:#fce1e0;
+    color: #fce1e0;
     font-size: 20px;
-    width: 34vw;
-    height: 10vh;
     border: 1px #fce1e0 solid;
+    text-decoration: none;
+    text-align: center;
+    width: 33.33%;
+    padding: 20px;
+}
+
+.button-nav:hover {
+    opacity: 0.8;
 }
 
 .section {

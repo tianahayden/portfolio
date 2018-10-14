@@ -44,7 +44,6 @@ h1 {
     font-size: 20px;
     padding: 10px;
 }
-
 .navbar {
     background-color: #fce1e0;
     display: flex;
@@ -54,11 +53,38 @@ h1 {
     top: 0;
 }
 
-button {
+.button-nav {
     background-color: #031424;
-    color:#fce1e0;
+    color: #fce1e0;
     font-size: 20px;
-    width: 34vw;
-    height: 10vh;
     border: 1px #fce1e0 solid;
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.button-nav:hover {
+    opacity: 1;
+}
+
+.selected {
+    background-color: #031424;
+    color: #fce1e0;
+    font-size: 20px;
+    border: 1px #fce1e0 solid;
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+}
+
+.button {
+    background-color: #fce1e0;
+    width: 30vw;
+    border: 1px #30415D solid;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px;
 }

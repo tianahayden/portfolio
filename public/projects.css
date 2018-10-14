@@ -21,11 +21,29 @@ html,body {
 
 .button-nav {
     background-color: #031424;
-    color:#fce1e0;
+    color: #fce1e0;
     font-size: 20px;
-    width: 34vw;
-    height: 10vh;
     border: 1px #fce1e0 solid;
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.button-nav:hover {
+    opacity: 1;
+}
+
+.selected {
+    background-color: #031424;
+    color: #fce1e0;
+    font-size: 20px;
+    border: 1px #fce1e0 solid;
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
 }
 
 h1 {
@@ -47,11 +65,16 @@ img {
 
 .button-project {
     background-color: #fce1e0;
-    width: 15vw;
+    width: 50px;
     border: 1px #30415D solid;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    padding: 10px;
+    padding: 10px 40px;
     margin: 20px;
+    color: #30415D;
+    text-decoration: none
 }
 
+ul {
+    padding: 20px;
+}
