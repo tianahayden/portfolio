@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #30415D;
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #fce1e0;
+    display: flex;
+    justify-content: space-evenly;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.button-nav {
+    background-color: #031424;
+    color:#fce1e0;
+    font-size: 20px;
+    width: 34vw;
+    height: 10vh;
+    border: 1px #fce1e0 solid;
+}
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+img {
+    height: 400px;
+    border: 1px solid #031424;
+    border-radius: 5%;
+}
+
+.project-1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.button-project {
+    background-color: #fce1e0;
+    width: 15vw;
+    border: 1px #30415D solid;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+
