@@ -1,10 +1,28 @@
 <html>
-  <head>
-    <title>Thank You</title>
-  </head>
-  <body>
-    <div>
-      Thank you <%= contact.firstName %> <%= contact.lastName %>. An email has been sent to Tiana.
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <title>Thank You</title>
+</head>
+
+<body>
+    <div class='navbar'>
+        <a class='button-nav' href="/">Home</a>
+        <a class='button-nav' href="/">Resume</a>
+        <a class='button-nav' href="/projects">Projects</a>
+        <a class='selected' href="/contact">Contact</a>
     </div>
-  </body>
+    <div class='icons'>
+        <a class='button-heading' href="https://github.com/tianahayden"><i class="fab fa-github"></i></a>
+        <a class='button-heading' href="https://www.linkedin.com/in/tianahayden/"><i class="fab fa-linkedin"></i></a>
+    </div>
+  <div class='thankyou'>
+    Thank you
+    <%= contact.firstName %>
+      <%= contact.lastName %>. An email has been sent.
+  </div>
+</body>
+
 </html>

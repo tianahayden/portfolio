@@ -6,8 +6,9 @@ html,body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #30415D;
     font-size: 20px;
+    background-color: #031424;
+    color: #fce1e0;
 }
 
 form {
@@ -57,23 +58,22 @@ h1 {
     background-color: #031424;
     color: #fce1e0;
     font-size: 20px;
-    border: 1px #fce1e0 solid;
+    border-bottom: solid 1px rgb(48,65,93,0.5);
     text-decoration: none;
     text-align: center;
     width: 25%;
     padding: 20px;
-    opacity: 0.8;
 }
 
 .button-nav:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .selected {
-    background-color: #031424;
+    background-color: rgb(48,65,93);
     color: #fce1e0;
     font-size: 20px;
-    border: 1px #fce1e0 solid;
+    border-bottom: solid 1px rgb(48,65,93,0.5);
     text-decoration: none;
     text-align: center;
     width: 25%;
@@ -83,8 +83,33 @@ h1 {
 .button {
     background-color: #fce1e0;
     width: 30vw;
-    border: 1px #30415D solid;
+    border: 5px rgb(48,65,93) solid;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     padding: 10px;
+    border-radius: 10px;
+}
+
+.icons {
+    position: fixed;
+    bottom: 0;
+    text-align: right;
+    right: 10px;
+    display: flex;
+}
+
+.button-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    color: #fce1e0;
+    text-decoration: none;
+}
+
+.fab:hover {
+    opacity: 0.8;
+}
+
+.thankyou {
+    margin: 50px
 }

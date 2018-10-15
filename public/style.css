@@ -9,7 +9,8 @@ html,body {
 }
 
 .container {
-    background-color: #8eaebd;
+    background-color: #031424;
+    color: #fce1e0;
 }
 
 .opening {
@@ -27,7 +28,7 @@ html,body {
 .heading {
     padding-left: 50%;
     padding-top: 10%;
-    color: #30415D;
+    color: #031424;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
      -ms-animation: fadein 2s; /* Internet Explorer */
@@ -50,15 +51,31 @@ html,body {
     position: absolute;
     top: 0;
     text-align: right;
-    right: 0px;
+    right: 10px;
     display: flex;
 }
 
 .button-heading {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
-    padding: 5px;
-    color: #30415D;
+    padding: 10px;
+    color: #031424;
+    text-decoration: none;
+}
+
+.icons-footer {
+    bottom: 0;
+    text-align: right;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    color: #fce1e0;
     text-decoration: none;
 }
 
@@ -73,13 +90,14 @@ html,body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 .button-nav {
     background-color: #031424;
     color: #fce1e0;
     font-size: 20px;
-    border: 1px #fce1e0 solid;
+    border-bottom: solid 1px rgb(48,65,93,0.5);
     text-decoration: none;
     text-align: center;
     width: 33.33%;
@@ -91,13 +109,20 @@ html,body {
 }
 
 .section {
-    color:#031424;
     margin: 70px 70px 0 70px;
 }
 
-.section h1 {
-    font-size: 40px;
-}
+/* .section h1 {
+    border-left: 1px rgb(48,65,93,0.5) solid;
+    padding: 0px;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    color: #fce1e0;
+    text-transform: uppercase;
+    font-size: 20px;
+} */
 
 .journey-section {
     display: flex;
@@ -112,7 +137,7 @@ html,body {
     transition: filter .1s ease-in-out;
     -webkit-filter: grayscale(30%); 
     filter: grayscale(30%);
-    border: #30415D 10px solid;
+    border: rgb(48,65,93,0.5) 10px solid;
 }
 
 .image:hover{
@@ -130,9 +155,9 @@ html,body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-left: 1px solid #30415D;
+    border-left: 1px solid rgb(48,65,93,0.5);
     padding-bottom: 50px;
-    border-right: 1px solid #30415D;
+    border-right: 1px solid rgb(48,65,93,0.5);
 }
 
 h2, h4 {
