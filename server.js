@@ -27,7 +27,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 app.post('/thanks', (req, res) => {
     const msg = {
         to: 'tiana.hayden@me.com',
-        from: 'noreply@noreply.com',
+        from: req.body.email,
         subject: 'New email from portfolio',
         text: req.body.message,
         html: '<p>first name: ' + req.body.firstName + '</p><p>last name: ' + req.body.lastName + '</p><p> email: ' + req.body.email + '</p><p>message: ' + req.body.message + '</p>',

@@ -39,12 +39,13 @@ html,body {
 .heading h1 {
     margin:0;
     font-weight: 300;
-    font-size: 100px;
+    font-size: 90px;
     font-weight: bold;
+    text-shadow: 2px 2px rgb(48,65,93,0.5);
 }
 
 .heading p {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .icons {
@@ -112,28 +113,28 @@ html,body {
     margin: 70px 70px 0 70px;
 }
 
-/* .section h1 {
-    border-left: 1px rgb(48,65,93,0.5) solid;
-    padding: 0px;
-    width: 200px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0px;
-    color: #fce1e0;
-    text-transform: uppercase;
-    font-size: 20px;
-} */
-
 .journey-section {
     display: flex;
     justify-content: space-around;
 }
 
+.image-section-1 {
+    flex: 1;
+}
+
+.image-section-2 {
+    flex: 1;
+}
+
+.image-section-3 {
+    flex: 1;
+}
+
 .image {
-    height: 300px;
+    width: 70%;
+    margin: auto;
     border-radius: 50%;
     justify-self: center;
-    margin: 6vw;
     transition: filter .1s ease-in-out;
     -webkit-filter: grayscale(30%); 
     filter: grayscale(30%);
@@ -143,6 +144,10 @@ html,body {
 .image:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%); 
+}
+
+.section-text{
+    margin: 4vw;
 }
 
 .child-section-l {
@@ -163,6 +168,67 @@ html,body {
 h2, h4 {
     text-align: center;
 }
+
+@media (max-width: 800px) {
+    .journey-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .child-section-l {
+        border-left: 1px solid rgb(48,65,93,0.5);
+        border-right: 1px solid rgb(48,65,93,0.5);
+    }
+    
+    .icons-footer {
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: inherit;
+        bottom: 10px;
+  }
+
+    .opening {
+        margin: 0;
+        padding: 0;
+        height: 90vh;
+        width: 100vw;
+        background-color: #fce1e0;
+        background-image: none;
+        display: flex
+    }
+
+    .heading {
+        padding-left: initial;
+        padding-top: initial;
+        color: #031424;
+        margin: auto;
+        text-align: center;
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+    }
+
+    .heading h1 {
+        font-weight: 300;
+        font-size: 15vh;
+        font-weight: bold;
+        text-shadow: 2px 2px rgb(48,65,93,0.5);
+        flex: 1;
+    }
+
+    .heading p {
+        font-size: 5vh;
+        flex: 1;
+    }
+
+}
+
+
+
 
 
 

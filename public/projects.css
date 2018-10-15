@@ -100,3 +100,36 @@ ul {
     padding: 20px;
 }
 
+@media (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .icons {
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: inherit;
+        bottom: 10px;
+  }
+
+    .project-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-text {
+        margin: 2vh 2vh 5vh 2vh;
+    }
+
+    img {
+        height: 50vw;
+        border: 5px solid rgb(48,65,93);
+        border-radius: 5%;
+        margin: 5vh;
+    }
+    
+}
+
