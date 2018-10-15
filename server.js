@@ -41,7 +41,10 @@ app.get('/projects', (req, res) => {
 });
 
 
+const PORT = process.env.PORT || 3000;
 
-app.listen(8080, () => {
-    console.log('listening at http://localhost:8080')
-});
+app.listen(PORT, () => console.log(`Server is listening on http://localhost:${PORT}`));
+
+// app.listen(8080, () => {
+//     console.log('listening at http://localhost:8080')
+// });
