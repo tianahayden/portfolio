@@ -15,6 +15,48 @@
     margin: 2vw;
 }
 
+h1 {
+    opacity: 0;
+    -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+h3 {
+    opacity: 0;
+    -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0.5s;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+p, ul {
+    opacity: 0;
+    -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 1s;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+a {
+    opacity: 0;
+    -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 1s;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
 .back-image {
     height: 100vh;
     width: 30vw;
@@ -64,6 +106,16 @@
 
 .fab:hover {
     opacity: 0.8;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 
