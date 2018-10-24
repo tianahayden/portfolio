@@ -5,6 +5,7 @@
 .container {
     display: flex;
     font-family: 'Montserrat', sans-serif;
+    color: #564a4a;
 }
 
 .left {
@@ -13,10 +14,31 @@
     flex-direction: column;
     text-align: right;
     margin: 2vw;
+    line-height: 25px;
+}
+
+.left a {
+    text-decoration: none;
+    color: #a2a0a0
+}
+
+.left .not-selected:hover {
+    text-decoration: underline;
+    color: #615b5b;
+}
+
+.left .selected {
+    color: #615b5b;
+}
+
+.left .seclted:hover {
+    text-decoration: none;
 }
 
 h1 {
     opacity: 0;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #e0dbdb;
     -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: fadein;
@@ -26,6 +48,9 @@ h1 {
 
 h3 {
     opacity: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #e0dbdb;
     -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 0.5s;
@@ -37,6 +62,7 @@ h3 {
 
 p, ul {
     opacity: 0;
+    list-style-type: square;
     -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 1s;
@@ -69,13 +95,19 @@ a {
 }
 
 .line {
-    height: 80vh;
+    height: 0vh;
     width: 2px;
-    background-image: linear-gradient(lightgray, white); 
+    background-image: linear-gradient(lightgray, white);
+    -webkit-animation-name: line; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 1s;
+    animation-name: line;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards; 
 }
 
 .right {
-    margin: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,11 +117,18 @@ a {
 
 .section-1 {
     text-align: center;
+    width: 40vw;
+    margin: 20px auto;
 }
 
 .section-2 {
     display: flex;
     justify-content: center;
+}
+
+.sub-section {
+    width: 10vw;
+    margin: 10px;
 }
 
 .icons-footer {
@@ -100,12 +139,13 @@ a {
 
 .icons {
     font-size: 2em;
-    color: lightgray;
-    margin: 1vw;
+    color: #9c9090;
+    margin: 10px;
 }
 
 .fab:hover {
     opacity: 0.8;
+    color: #564a4a
 }
 
 @keyframes fadein {
@@ -116,6 +156,16 @@ a {
 @-webkit-keyframes fadein {
     from {opacity: 0}
     to {opacity: 1}
+}
+
+@keyframes line {
+    from {height: 0vh}
+    to {height: 80vh}
+}
+
+@-webkit-keyframes line {
+    from {height: 0vh}
+    to {height: 80vh}
 }
 
 
