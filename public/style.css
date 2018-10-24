@@ -2,6 +2,7 @@
     box-sizing: border-box;
   }
 
+
 .container {
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -15,6 +16,7 @@
     text-align: right;
     margin: 2vw;
     line-height: 25px;
+    position: fixed;
 }
 
 .left a {
@@ -99,6 +101,7 @@ a {
     height: 0vh;
     width: 2px;
     background-image: linear-gradient(lightgray, white);
+    margin-left: 35vw;
     -webkit-animation-name: line; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 1s;
@@ -111,15 +114,12 @@ a {
 .right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70vw;
-    height: 100vh;
+    margin: auto;
 }
 
 .section-1 {
     text-align: center;
     width: 40vw;
-    margin: 20px auto;
 }
 
 .section-2 {

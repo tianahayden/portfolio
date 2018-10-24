@@ -40,7 +40,6 @@ h1 {
 }
 
 h3 {
-    text-align: center;
     letter-spacing: 1px;
     text-shadow: 1px 1px #e0dbdb;
 }
@@ -111,7 +110,7 @@ p, ul {
 }
 
 .project-text {
-   margin: 2vw; 
+   margin-right: 2vw; 
 }
 
 img {
@@ -119,4 +118,8 @@ img {
     border: 1px solid #9c9090;
     border-radius: 10%;
     box-shadow: 1px 1px #a2a0a0;  
+}
+
+h2 {
+    text-align: center;
 }
