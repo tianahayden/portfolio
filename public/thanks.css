@@ -13,7 +13,6 @@
     text-align: right;
     margin: 2vw;
     line-height: 25px;
-    position: fixed;
 }
 
 .left a {
@@ -64,8 +63,7 @@ p, ul {
 .line {
     height: 80vh;
     width: 2px;
-    background-image: linear-gradient(lightgray, white);
-    margin-left: 35vw;
+    background-image: linear-gradient(lightgray, white); 
 }
 
 .right {
@@ -73,23 +71,29 @@ p, ul {
     flex-direction: column;
     justify-content: center;
     width: 70vw;
-    margin: 1vw;
+    height: 100vh;
 }
 
 .section-1 {
+    text-align: center;
+    width: 40vw;
     margin: 20px auto;
 }
 
-.section-1 h1 {
-    text-align: center;
+.section-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-section {
+    width: 10vw;
+    margin: 10px;
 }
 
 .icons-footer {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    display: flex;
-    flex-direction: column;
 }
 
 .icons {
@@ -101,22 +105,4 @@ p, ul {
 .fab:hover {
     opacity: 0.8;
     color: #564a4a
-}
-
-/* Projects */
-
-.project-1 {
-    display: flex;
-    margin: 10vh;
-}
-
-.project-text {
-   margin: 2vw; 
-}
-
-img {
-    width: 30vw;
-    border: 1px solid #9c9090;
-    border-radius: 10%;
-    box-shadow: 1px 1px #a2a0a0;  
 }

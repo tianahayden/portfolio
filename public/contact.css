@@ -2,14 +2,116 @@
     box-sizing: border-box;
   }
 
-html,body {
-    margin: 0;
-    padding: 0;
+/* Index */
+
+.container {
+    display: flex;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    background-color: #031424;
-    color: #fce1e0;
+    color: #564a4a;
 }
+
+.left {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 2vw;
+    line-height: 25px;
+}
+
+.left a {
+    text-decoration: none;
+    color: #a2a0a0
+}
+
+.left .not-selected:hover {
+    text-decoration: underline;
+    color: #615b5b;
+}
+
+.left .selected {
+    color: #615b5b;
+}
+
+.left .selected:hover {
+    text-decoration: none;
+}
+
+h1 {
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #e0dbdb;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #e0dbdb;
+}
+
+p, ul {
+    list-style-type: square;
+}
+
+.back-image {
+    height: 100vh;
+    width: 30vw;
+    background-image: url("tiana.png");
+    background-size: 30vw;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.line {
+    height: 80vh;
+    width: 2px;
+    background-image: linear-gradient(lightgray, white); 
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    height: 100vh;
+}
+
+.section-1 {
+    text-align: center;
+    width: 40vw;
+    margin: 20px auto;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-section {
+    width: 10vw;
+    margin: 10px;
+}
+
+.icons-footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icons {
+    font-size: 2em;
+    color: #9c9090;
+    margin: 10px;
+}
+
+.fab:hover {
+    opacity: 0.8;
+    color: #564a4a
+}
+
+/* Contact */
 
 form {
     display: flex;
@@ -32,155 +134,11 @@ textarea {
     justify-content: center;
 }
 
-h1 {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.navbar {
-    background-color: #fce1e0;
-    display: flex;
-    justify-content: space-evenly;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-
-.button-nav {
-    background-color: #031424;
-    color: #fce1e0;
-    font-size: 20px;
-    border-bottom: solid 1px rgb(48,65,93,0.5);
-    text-decoration: none;
-    text-align: center;
-    width: 25%;
-    padding: 20px;
-}
-
-.button-nav:hover {
-    opacity: 0.8;
-}
-
-.selected {
-    background-color: rgb(48,65,93);
-    color: #fce1e0;
-    font-size: 20px;
-    border-bottom: solid 1px rgb(48,65,93,0.5);
-    text-decoration: none;
-    text-align: center;
-    width: 25%;
-    padding: 20px;
-}
-
 .button {
-    background-color: #fce1e0;
-    width: 400px;
-    border: 5px rgb(48,65,93) solid;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 10px;
+    background-color: #9c9090;
+    color: white;
 }
 
-.icons {
-    position: fixed;
-    bottom: 0;
-    text-align: right;
-    right: 10px;
-    display: flex;
-}
-
-.button-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    padding: 10px;
-    color: #fce1e0;
-    text-decoration: none;
-}
-
-.fab:hover {
-    opacity: 0.8;
-}
-
-.thankyou {
-    margin: 50px
-}
-
-
-@media (max-width: 600px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-    }
-    .icons {
-        width: 100vw;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        position: inherit;
-        bottom: 10px;
-  }
-    
-}
-
-@media (max-width: 500px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-    }
-    .icons {
-        width: 100vw;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        position: inherit;
-        bottom: 10px;
-  }
-
-    input, textarea {
-        width: 300px;
-        border: 1px solid gray;
-        margin: 10px;
-        padding: 10px;
-        }
-
-    textarea {
-        height: 200px;
-    }
-
-    .button {
-        width: 300px;
-    }
-    
-}
-
-@media (max-width: 400px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-    }
-    .icons {
-        width: 100vw;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        position: inherit;
-        bottom: 10px;
-  }
-
-    input, textarea {
-        width: 200px;
-        border: 1px solid gray;
-        margin: 10px;
-        padding: 10px;
-        }
-
-    textarea {
-        height: 200px;
-    }
-
-    .button {
-        width: 200px;
-    }
-    
+.button:hover {
+    background-color: #564a4a;
 }

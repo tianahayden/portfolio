@@ -1,28 +1,40 @@
 <html>
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+  <link rel="stylesheet" href="thanks.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
   <title>Thank You</title>
 </head>
 
 <body>
-    <div class='navbar'>
-        <a class='button-nav' href="/">Home</a>
-        <a class='button-nav' href="/">Resume</a>
-        <a class='button-nav' href="/projects">Projects</a>
-        <a class='selected' href="/contact">Contact</a>
-    </div>
-    <div class='icons'>
-        <a class='button-heading' href="https://github.com/tianahayden"><i class="fab fa-github"></i></a>
-        <a class='button-heading' href="https://www.linkedin.com/in/tianahayden/"><i class="fab fa-linkedin"></i></a>
-    </div>
-  <div class='thankyou'>
-    Thank you
-    <%= contact.firstName %>
-      <%= contact.lastName %>. An email has been sent.
-  </div>
+    <div class='container'>
+        <div class='back-image'></div>
+        <div class='left'>
+          <h1>Tiana Hayden</h1>
+          <a class='not-selected' href='/'>Home</a>
+          <a class='not-selected' href='/projects'>Projects</a>
+          <a class='not-selected' href='resume.pdf' target='_blank'>Resume</a>
+          <a class='not-selected' href='/contact'>Contact</a>
+        </div>
+        <div class='line'></div>
+        <div class='right'>
+          <div class='section-1'>
+              <div class='thankyou'>
+                  Thank you
+                  <%= contact.firstName %>
+                    <%= contact.lastName %>. An email has been sent.
+                </div>
+          <div class='icons-footer'>
+            <a class='icons' href="https://github.com/tianahayden" target="_blank"><i class="fab fa-github"></i></a>
+            <a class='icons' href="https://www.linkedin.com/in/tianahayden/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
