@@ -149,6 +149,26 @@ a {
     color: #564a4a
 }
 
+@media only screen and (max-width: 1000px) {
+    .section-1 {
+        width: auto;
+        margin: 40px;
+    }
+    
+    .section-2 {
+        flex-direction: column;
+    }
+
+    .sub-section {
+        width: auto;
+    }
+
+    ul {
+        width: 100px;
+        margin: auto;
+    }
+}
+
 @keyframes fadein {
     from {opacity: 0}
     to {opacity: 1}
