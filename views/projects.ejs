@@ -2,66 +2,75 @@
 <html>
 
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:300' rel='stylesheet'>
-    <link rel='stylesheet' href='projects.css'>
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css' integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz'
-        crossorigin='anonymous'>
-    <title>Projects</title>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:300' rel='stylesheet'>
+	<link rel='stylesheet' href='projects.css'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css' integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz'
+	 crossorigin='anonymous'>
+	<title>Projects</title>
 </head>
 
 <body>
-    <div class='container'>
-        <div class='back-image'></div>
-        <div class='left'>
-            <h1>Tiana Hayden</h1>
-            <a class='not-selected' href='/'>Home</a>
-            <a class='selected' href='/projects'>Projects</a>
-            <a class='not-selected' href='resume.pdf' target='_blank'>Resume</a>
-            <a class='not-selected' href='/contact'>Contact</a>
-        </div>
-        <div class='line'></div>
-        <div class='right'>
-            <div class='section-1'>
-                <h2>My Projects</h2>
-                <div class='project-1'>
-                    <div class='project-text'>
-                        <h3>Food Faceoff</h3>
-                        <p>Built in React</p>
-                        <p>Called 3 open source APIs</p>
-                        <p>Styled using Styled Components in React</p>
-                        <a class='project-link' href="https://tmh-foodfaceoffhackathon.herokuapp.com/" target="_blank">Try
-                            It
-                        </a>
-                    </div>
-                    <div class='project-image'>
-                        <img src="Foodfaceoff.png" alt="food_faceoff_project">
-                    </div>
-                </div>
-                <div class='project-1'>
-                    <div class='project-text'>
-                        <h3>Movie Finder</h3>
-                        <p>Built in React using Redux and React Router</p>
-                        <p>Used OMDB Movie Database API to return movies</p>
-                        <p>Styled using SCSS</p>
-                        <a class='project-link' href='https://tmh-react200moviefinder.herokuapp.com/#/' target='_blank'>Try
-                            It
-                        </a>
-                    </div>
-                    <div class='project-image'>
-                        <img src='movie-finder.png' alt='food_faceoff_project'>
-                    </div>
-                </div>
-            </div>
-            <div class='icons-footer'>
-                <a class='icons' href='https://github.com/tianahayden' target='_blank'><i class='fab fa-github'></i></a>
-                <a class='icons' href='https://www.linkedin.com/in/tianahayden/' target='_blank'><i class='fab fa-linkedin'></i></a>
-            </div>
-        </div>
-    </div>
-    </div>
+	<div class='container'>
+		<div class='back-image'></div>
+		<div class='left'>
+			<h1>Tiana Hayden</h1>
+			<a class='not-selected' href='/'>Home</a>
+			<a class='selected' href='/projects'>Projects</a>
+			<a class='not-selected' href='resume.pdf' target='_blank'>Resume</a>
+			<a class='not-selected' href='/contact'>Contact</a>
+		</div>
+		<div class='line'></div>
+		<div class='right'>
+			<div class='section-1'>
+				<h2>My Projects</h2>
+				<div class='project-1'>
+					<div class='project-text'>
+						<h3>Spacebox</h3>
+						<p>Collaborated with a team of 8 engineers to build an online interactive jukebox using Spotify Web API. I transferred
+							existing backend functionality from Express to Loopback and created endpoints using remote methods. Created tests
+							using Mocha and Chai to ensure site functionality in future iterations.</p>
+						</a>
+					</div>
+					<div class='project-image'>
+						<img src='Spacebox.png' alt='food_faceoff_project'>
+					</div>
+				</div>
+				<div class='project-1'>
+					<div class='project-text'>
+						<h3>Movie Finder</h3>
+						<p>Built an application that allows users to search for movie information using the Open Movie Database. I created
+							an Express server to deploy the OMDB API call. I built the frontend in React using Redux and React Router and styled
+							it in SCSS.</p>
+						<a class='project-link' href='https://tmh-react200moviefinder.herokuapp.com/#/' target='_blank'>Try It
+						</a>
+					</div>
+					<div class='project-image'>
+						<img src='movie-finder.png' alt='food_faceoff_project'>
+					</div>
+				</div>
+				<div class='project-1'>
+					<div class='project-text'>
+						<h3>Food Faceoff</h3>
+						<p>In 72 hours, I created a site that compares how much of one food you can eat compared to another. It calls an open
+							source nutrition database, uses an image generator based on the food choices, and displays calories using Google charts.
+							The app is built in React and styled with Styled Components in React.</p>
+						<a class='project-link' href="https://tmh-foodfaceoffhackathon.herokuapp.com/" target="_blank">Try It
+						</a>
+					</div>
+					<div class='project-image'>
+						<img src="Foodfaceoff.png" alt="food_faceoff_project">
+					</div>
+				</div>
+				<div class='icons-footer'>
+					<a class='icons' href='https://github.com/tianahayden' target='_blank'><i class='fab fa-github'></i></a>
+					<a class='icons' href='https://www.linkedin.com/in/tianahayden/' target='_blank'><i class='fab fa-linkedin'></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
