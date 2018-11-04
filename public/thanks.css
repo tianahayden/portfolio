@@ -108,3 +108,63 @@ p, ul {
     opacity: 0.8;
     color: #564a4a
 }
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: inherit;
+    }
+    
+    .back-image {
+        opacity: 0;
+    }
+
+    .left {
+        width: auto;
+        display: inherit;
+        text-align: center;
+        line-height: inherit;
+        position: inherit;
+    }
+
+    a {
+        padding: 10px;
+    }
+
+    .line {
+        height: 5px;
+        width: 100vw;
+        animation-name: inherit;
+        -webkit-animation-name: inherit;
+        color:#564a4a;
+        margin: 0;
+    }
+
+    .section-1 {
+        width: auto;
+        margin: 20px 40px;
+    }
+    
+    .section-2 {
+        margin-bottom: 100px;
+    }
+
+    .sub-section {
+        width: auto;
+    }
+
+    ul {
+        width: 100px;
+        margin: auto;
+    }
+
+    .right {
+        width: auto;
+        margin: 50px;
+    }
+
+    .icons-footer {
+        position: inherit;
+        text-align: center;
+    }
+
+}
