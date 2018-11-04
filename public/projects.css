@@ -128,3 +128,57 @@ h2 {
     text-align: center;
 }
 
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: inherit;
+    }
+    
+    .back-image {
+        opacity: 0;
+    }
+
+    .left {
+        width: auto;
+        display: inherit;
+        text-align: center;
+        line-height: inherit;
+        position: inherit;
+    }
+
+    a {
+        padding: 10px;
+    }
+
+    .line {
+        height: 5px;
+        width: 100vw;
+        animation-name: inherit;
+        -webkit-animation-name: inherit;
+        color:#564a4a;
+        margin: 0;
+    }
+
+    .right {
+        display: inherit;
+        width: auto;
+        margin: auto;
+    }
+
+    .section-1 {
+        margin: auto;
+    }
+
+    .project-1 {
+        margin: auto;
+    }
+
+    img {
+        width: 80vw;
+    }
+
+    .icons-footer {
+        position: inherit;
+        text-align: center;
+        display: inherit;
+    }
+}

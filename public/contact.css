@@ -144,3 +144,43 @@ textarea {
 .button:hover {
     background-color: #564a4a;
 }
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: inherit;
+    }
+    
+    .back-image {
+        opacity: 0;
+    }
+
+    .left {
+        width: auto;
+        display: inherit;
+        text-align: center;
+        line-height: inherit;
+        position: inherit;
+    }
+
+    a {
+        padding: 10px;
+    }
+
+    .line {
+        height: 5px;
+        width: 100vw;
+        animation-name: inherit;
+        -webkit-animation-name: inherit;
+        color:#564a4a;
+        margin: 0;
+    }
+
+    .right {
+        width: auto;
+    }
+
+    .icons-footer {
+        position: inherit;
+        text-align: center;
+    }
+}
