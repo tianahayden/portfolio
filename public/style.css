@@ -177,7 +177,7 @@ a {
     }
 
     .line {
-        height: 1px;
+        height: 5px;
         width: 100vw;
         animation-name: inherit;
         -webkit-animation-name: inherit;
