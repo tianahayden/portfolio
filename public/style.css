@@ -2,11 +2,17 @@
     box-sizing: border-box;
   }
 
+html, body {
+    height: 100%;
+    width: 100%
+}
 
 .container {
     display: flex;
     font-family: 'Montserrat', sans-serif;
     color: #564a4a;
+    height: 100%;
+    width: 100%;
 }
 
 .left {
