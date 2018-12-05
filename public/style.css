@@ -16,7 +16,7 @@ html, body {
 }
 
 .left {
-    width: 30vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -107,7 +107,7 @@ a {
     height: 0vh;
     width: 2px;
     background-image: linear-gradient(lightgray, white);
-    margin-left: 35vw;
+    margin-left: 25vw;
     -webkit-animation-name: line; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 1s;

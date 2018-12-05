@@ -7,7 +7,7 @@
 }
 
 .left {
-    width: 30vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -65,7 +65,7 @@ p, ul {
     height: 80vh;
     width: 2px;
     background-image: linear-gradient(lightgray, white);
-    margin-left: 35vw;
+    margin-left: 25vw;
 }
 
 .right {

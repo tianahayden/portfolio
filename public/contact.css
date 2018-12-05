@@ -11,7 +11,7 @@
 }
 
 .left {
-    width: 30vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -69,7 +69,7 @@ p, ul {
     height: 80vh;
     width: 2px;
     background-image: linear-gradient(lightgray, white);
-    margin-left: 35vw;
+    margin-left: 25vw;
 }
 
 .right {
@@ -131,14 +131,20 @@ textarea {
     height: 200px;
 }
 
+h2 {
+    letter-spacing: 2px;
+}
+
 .form {
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 
 .button {
     background-color: #9c9090;
     color: white;
+    text-transform: uppercase;
 }
 
 .button:hover {
