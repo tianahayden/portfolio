@@ -21,12 +21,13 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.post('/thanks', (req, res) => {
     const msg = {
-        to: 'tiana.hayden@me.com',
+        to: 'developertiana@gmail.com',
         from: req.body.email,
         subject: 'New email from portfolio',
         text: req.body.message,
